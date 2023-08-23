@@ -136,6 +136,7 @@ impl From<usize> for ClientInitState {
 /// ```
 ///
 /// Each builder type includes usage examples for the builder.
+#[derive(Clone)]
 pub struct Client {
     event_processor: Arc<dyn EventProcessor>,
     data_source: Arc<dyn DataSource>,
